@@ -28,7 +28,8 @@
                                     <span class="text-3xl mr-3">💳</span>
                                     <h3 class="text-xl md:text-2xl font-bold text-white">{{ t('appAssinaturas') }}</h3>
                                 </div>
-                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{ t('appAssinaturasDesc') }}</p>
+                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{
+                                    t('appAssinaturasDesc') }}</p>
                                 <div class="flex flex-wrap gap-2 mb-4">
                                     <TechBadge v-for="(tech, index) in appAssinaturasTech" :key="index"
                                         :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
@@ -47,9 +48,11 @@
                                 class="bg-white/70 backdrop-blur-sm rounded-lg p-6 md:p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
                                 <div class="flex items-center mb-4 justify-start md:justify-end">
                                     <span class="text-3xl mr-3 md:ml-3 md:mr-0 md:order-2">🏛️</span>
-                                    <h3 class="text-xl md:text-2xl font-bold text-white md:mr-3">{{ t('portalMunicipal') }}</h3>
+                                    <h3 class="text-xl md:text-2xl font-bold text-white md:mr-3">{{ t('portalMunicipal')
+                                        }}</h3>
                                 </div>
-                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{ t('portalMunicipalDesc') }}</p>
+                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{
+                                    t('portalMunicipalDesc') }}</p>
                                 <div class="flex flex-wrap gap-2 mb-4 justify-start md:justify-end">
                                     <TechBadge v-for="(tech, index) in portalMunicipalTech" :key="index"
                                         :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
@@ -78,9 +81,11 @@
                                 class="bg-white/70 backdrop-blur-sm rounded-lg p-6 md:p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
                                 <div class="flex items-center mb-4">
                                     <span class="text-3xl mr-3">🎓</span>
-                                    <h3 class="text-xl md:text-2xl font-bold text-white">{{ t('sistemaEducacional') }}</h3>
+                                    <h3 class="text-xl md:text-2xl font-bold text-white">{{ t('sistemaEducacional') }}
+                                    </h3>
                                 </div>
-                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{ t('sistemaEducacionalDesc') }}</p>
+                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{
+                                    t('sistemaEducacionalDesc') }}</p>
                                 <div class="flex flex-wrap gap-2 mb-4">
                                     <TechBadge v-for="(tech, index) in sistemaEducacionalTech" :key="index"
                                         :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
@@ -99,9 +104,11 @@
                                 class="bg-white/70 backdrop-blur-sm rounded-lg p-6 md:p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
                                 <div class="flex items-center mb-4 justify-start md:justify-end">
                                     <span class="text-3xl mr-3 md:ml-3 md:mr-0 md:order-2">🦅</span>
-                                    <h3 class="text-xl md:text-2xl font-bold text-white md:mr-3">{{ t('fundoAguia') }}</h3>
+                                    <h3 class="text-xl md:text-2xl font-bold text-white md:mr-3">{{ t('fundoAguia') }}
+                                    </h3>
                                 </div>
-                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{ t('fundoAguiaDesc') }}</p>
+                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{
+                                    t('fundoAguiaDesc') }}</p>
                                 <div class="flex flex-wrap gap-2 mb-4 justify-start md:justify-end">
                                     <TechBadge v-for="(tech, index) in fundoAguiaTech" :key="index" :name="tech.name"
                                         :icon="tech.icon" :bgClass="tech.bgClass" :textClass="tech.textClass" />
@@ -129,9 +136,11 @@
                                 class="bg-white/70 backdrop-blur-sm rounded-lg p-6 md:p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
                                 <div class="flex items-center mb-4">
                                     <span class="text-3xl mr-3">🛠️</span>
-                                    <h3 class="text-xl md:text-2xl font-bold text-white">{{ t('sistemaAutomacao') }}</h3>
+                                    <h3 class="text-xl md:text-2xl font-bold text-white">{{ t('sistemaAutomacao') }}
+                                    </h3>
                                 </div>
-                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{ t('sistemaAutomacaoDesc') }}</p>
+                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{
+                                    t('sistemaAutomacaoDesc') }}</p>
                                 <div class="flex flex-wrap gap-2 mb-4">
                                     <TechBadge v-for="(tech, index) in sistemaAutomacaoTech" :key="index"
                                         :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
@@ -150,9 +159,11 @@
                                 class="bg-white/70 backdrop-blur-sm rounded-lg p-6 md:p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
                                 <div class="flex items-center mb-4 justify-start md:justify-end">
                                     <span class="text-3xl mr-3 md:ml-3 md:mr-0 md:order-2">🎤</span>
-                                    <h3 class="text-xl md:text-2xl font-bold text-white md:mr-3">{{ t('sistemaPalestras') }}</h3>
+                                    <h3 class="text-xl md:text-2xl font-bold text-white md:mr-3">{{
+                                        t('sistemaPalestras') }}</h3>
                                 </div>
-                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{ t('sistemaPalestrasDesc') }}</p>
+                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{
+                                    t('sistemaPalestrasDesc') }}</p>
                                 <div class="flex flex-wrap gap-2 mb-4 justify-start md:justify-end">
                                     <TechBadge v-for="(tech, index) in sistemaPalestrasTech" :key="index"
                                         :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
@@ -183,7 +194,8 @@
                                     <span class="text-3xl mr-3">🧸</span>
                                     <h3 class="text-xl md:text-2xl font-bold text-white">{{ t('brinkids') }}</h3>
                                 </div>
-                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{ t('brinkidsDesc') }}</p>
+                                <p class="text-white/90 mb-4 leading-relaxed text-sm md:text-base">{{ t('brinkidsDesc')
+                                    }}</p>
                                 <div class="flex flex-wrap gap-2 mb-4">
                                     <TechBadge v-for="(tech, index) in brinkidsTech" :key="index" :name="tech.name"
                                         :icon="tech.icon" :bgClass="tech.bgClass" :textClass="tech.textClass" />

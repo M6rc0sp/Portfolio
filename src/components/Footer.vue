@@ -24,7 +24,8 @@
                     </a>
                 </div>
 
-                <button @click="scrollToTop" class="text-white/60 hover:text-white transition-colors text-center md:text-right">
+                <button @click="scrollToTop"
+                    class="text-white/60 hover:text-white transition-colors text-center md:text-right">
                     <svg class="w-4 h-4 mx-auto md:mx-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M7 14l5-5 5 5z" />
                     </svg>
