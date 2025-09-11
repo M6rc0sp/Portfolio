@@ -6,6 +6,38 @@
                 <div class="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded"></div>
             </div>
 
+            <!-- Foto e Introdução -->
+            <div class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow mb-8">
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+                    <!-- Foto -->
+                    <div class="flex-shrink-0">
+                        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-accent-500 shadow-xl">
+                            <img src="/assets/images/profile.jpg" alt="Marcos Paulo Barbosa"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Introdução -->
+                    <div class="flex-1 text-center md:text-left">
+                        <h2 class="text-2xl font-bold text-white mb-4">{{ t('fullName') }}</h2>
+                        <p class="text-lg text-white/90 leading-relaxed mb-4">
+                            {{ t('aboutIntro') }}
+                        </p>
+                        <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                            <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm font-medium">
+                                {{ t('focusedOnResults') }}
+                            </span>
+                            <span class="px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-sm font-medium">
+                                {{ t('alwaysLearning') }}
+                            </span>
+                            <span class="px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-sm font-medium">
+                                {{ t('creativeSolutions') }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow mb-8">
                 <p class="text-lg text-white/90 leading-relaxed mb-6">
                     {{ t('aboutDescription') }}

@@ -3,9 +3,8 @@
         <div class="max-w-4xl mx-auto text-center">
             <!-- Hero Section -->
             <div class="mb-12">
-                <div
-                    class="w-32 h-32 bg-gradient-to-br from-primary-500 to-accent-500 rounded-full mx-auto mb-8 flex items-center justify-center card-shadow">
-                    <span class="text-4xl font-bold text-white">MP</span>
+                <div class="w-32 h-32 rounded-full mx-auto mb-8 overflow-hidden card-shadow">
+                    <img src="/assets/images/profile.jpg" alt="Marcos Paulo" class="w-full h-full object-cover">
                 </div>
 
                 <h1 class="text-5xl font-bold text-white mb-4">

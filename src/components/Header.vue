@@ -3,9 +3,8 @@
         <div class="container mx-auto px-6 py-3">
             <nav class="flex items-center justify-between">
                 <router-link to="/" class="flex items-center space-x-3">
-                    <div
-                        class="w-10 h-10 rounded-md bg-gradient-to-br from-primary-600 to-accent-500 flex items-center justify-center text-white font-bold shadow-md">
-                        MP
+                    <div class="w-10 h-10 rounded-md overflow-hidden shadow-md">
+                        <img src="/assets/images/profile.jpg" alt="Marcos Paulo" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <div class="text-lg font-semibold text-white">Marcos Paulo</div>
