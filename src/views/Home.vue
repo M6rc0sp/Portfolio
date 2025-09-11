@@ -55,9 +55,9 @@
                     </div>
                     <div
                         class="bg-white/70 backdrop-blur-sm rounded-lg p-6 card card-shadow hover:shadow-lg transition-all hover:scale-105 text-center">
-                        <i class="devicon-git-plain text-white text-4xl mb-2"></i>
-                        <h3 class="font-semibold text-white">Git</h3>
-                        <p class="text-sm text-accent-300">Ferramenta</p>
+                        <i class="devicon-github-plain text-white text-4xl mb-2"></i>
+                        <h3 class="font-semibold text-white">GitHub Actions</h3>
+                        <p class="text-sm text-accent-300">CI/CD</p>
                     </div>
                 </div>
                 <!-- Mobile: horizontal scroll to keep all items visible -->
@@ -89,9 +89,9 @@
                             <p class="text-xs text-accent-300">DevOps</p>
                         </div>
                         <div class="w-44 bg-white/70 backdrop-blur-sm rounded-lg p-4 card card-shadow text-center">
-                            <i class="devicon-git-plain text-white text-3xl mb-1"></i>
-                            <h3 class="font-semibold text-white text-sm">Git</h3>
-                            <p class="text-xs text-accent-300">Ferramenta</p>
+                            <i class="devicon-github-plain text-white text-3xl mb-1"></i>
+                            <h3 class="font-semibold text-white text-sm">GitHub Actions</h3>
+                            <p class="text-xs text-accent-300">CI/CD</p>
                         </div>
                     </div>
                 </div>
@@ -114,11 +114,11 @@
             <!-- CTAs -->
             <div class="flex items-center justify-center gap-4">
                 <router-link to="/projects"
-                    class="inline-block bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:from-primary-700 hover:to-accent-600 transition-all transform hover:scale-105">
+                    class="inline-block bg-gradient-to-r from-primary-600 to-accent-500 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:from-primary-700 hover:to-accent-600 transition-all transform hover:scale-105 hover:text-white">
                     {{ t('viewProjects') }}
                 </router-link>
                 <button type="button" @click="showContact = true"
-                    class="inline-block bg-white/10 border border-white/20 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-white/15 transition-all transform hover:scale-105">
+                    class="inline-block bg-white/10 border border-white/20 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-white/15 transition-all transform hover:scale-105 hover:text-white">
                     {{ t('talkToMe') }}
                 </button>
             </div>

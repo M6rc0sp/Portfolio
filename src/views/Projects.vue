@@ -6,92 +6,194 @@
                 <div class="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded"></div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Fundo Águia -->
-                <article
-                    class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">🦅</span>
-                        <h3 class="text-2xl font-bold text-white">{{ t('fundoAguia') }}</h3>
-                    </div>
-                    <p class="text-white/90 mb-4 leading-relaxed">
-                        {{ t('fundoAguiaDesc') }}
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <TechBadge v-for="(tech, index) in fundoAguiaTech" :key="index" :name="tech.name"
-                            :icon="tech.icon" :bgClass="tech.bgClass" :textClass="tech.textClass" />
-                    </div>
-                    <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">💰 {{
-                        t('financialSystem') }}</span></div>
-                </article>
+            <div class="relative">
+                <!-- Timeline line central -->
+                <div
+                    class="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-accent-500">
+                </div>
 
-                <!-- Sistema Educacional -->
-                <article
-                    class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">🎓</span>
-                        <h3 class="text-2xl font-bold text-white">{{ t('sistemaEducacional') }}</h3>
+                <!-- Projects in timeline alternada -->
+                <div class="space-y-16">
+                    <!-- App de Assinaturas - 2025 - Direita -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2"></div>
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-white/30">
+                            2025
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <article
+                                class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
+                                <div class="flex items-center mb-4">
+                                    <span class="text-3xl mr-3">💳</span>
+                                    <h3 class="text-2xl font-bold text-white">{{ t('appAssinaturas') }}</h3>
+                                </div>
+                                <p class="text-white/90 mb-4 leading-relaxed">{{ t('appAssinaturasDesc') }}</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <TechBadge v-for="(tech, index) in appAssinaturasTech" :key="index"
+                                        :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
+                                        :textClass="tech.textClass" />
+                                </div>
+                                <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">📱 {{
+                                    t('eCommerce') }}</span></div>
+                            </article>
+                        </div>
                     </div>
-                    <p class="text-white/90 mb-4 leading-relaxed">{{ t('sistemaEducacionalDesc') }}</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <TechBadge v-for="(tech, index) in sistemaEducacionalTech" :key="index" :name="tech.name"
-                            :icon="tech.icon" :bgClass="tech.bgClass" :textClass="tech.textClass" />
-                    </div>
-                    <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">📚 {{
-                        t('projectEducation') }}</span>
-                    </div>
-                </article>
 
-                <!-- Portal Municipal -->
-                <article
-                    class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">🏛️</span>
-                        <h3 class="text-2xl font-bold text-white">{{ t('portalMunicipal') }}</h3>
+                    <!-- Portal Municipal - 2023 - Esquerda -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <article
+                                class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
+                                <div class="flex items-center mb-4 justify-end">
+                                    <h3 class="text-2xl font-bold text-white mr-3">{{ t('portalMunicipal') }}</h3>
+                                    <span class="text-3xl">🏛️</span>
+                                </div>
+                                <p class="text-white/90 mb-4 leading-relaxed">{{ t('portalMunicipalDesc') }}</p>
+                                <div class="flex flex-wrap gap-2 mb-4 justify-end">
+                                    <TechBadge v-for="(tech, index) in portalMunicipalTech" :key="index"
+                                        :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
+                                        :textClass="tech.textClass" />
+                                </div>
+                                <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">🏛️ {{
+                                    t('government') }}</span></div>
+                            </article>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-white/30">
+                            2023
+                        </div>
+                        <div class="w-1/2"></div>
                     </div>
-                    <p class="text-white/90 mb-4 leading-relaxed">{{ t('portalMunicipalDesc') }}</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <TechBadge v-for="(tech, index) in portalMunicipalTech" :key="index" :name="tech.name"
-                            :icon="tech.icon" :bgClass="tech.bgClass" :textClass="tech.textClass" />
-                    </div>
-                    <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">🏛️ {{
-                        t('government') }}</span>
-                    </div>
-                </article>
 
-                <!-- App de Assinaturas -->
-                <article
-                    class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">💳</span>
-                        <h3 class="text-2xl font-bold text-white">{{ t('appAssinaturas') }}</h3>
+                    <!-- Sistema Educacional - 2023 - Direita -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2"></div>
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-white/30">
+                            2023
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <article
+                                class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
+                                <div class="flex items-center mb-4">
+                                    <span class="text-3xl mr-3">🎓</span>
+                                    <h3 class="text-2xl font-bold text-white">{{ t('sistemaEducacional') }}</h3>
+                                </div>
+                                <p class="text-white/90 mb-4 leading-relaxed">{{ t('sistemaEducacionalDesc') }}</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <TechBadge v-for="(tech, index) in sistemaEducacionalTech" :key="index"
+                                        :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
+                                        :textClass="tech.textClass" />
+                                </div>
+                                <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">📚 {{
+                                    t('projectEducation') }}</span></div>
+                            </article>
+                        </div>
                     </div>
-                    <p class="text-white/90 mb-4 leading-relaxed">{{ t('appAssinaturasDesc') }}</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <TechBadge v-for="(tech, index) in appAssinaturasTech" :key="index" :name="tech.name"
-                            :icon="tech.icon" :bgClass="tech.bgClass" :textClass="tech.textClass" />
-                    </div>
-                    <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">📱 {{ t('eCommerce')
-                    }}</span>
-                    </div>
-                </article>
 
-                <!-- Brinkids - occupying two columns -->
-                <article
-                    class="md:col-span-2 bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">🧸</span>
-                        <h3 class="text-2xl font-bold text-white">{{ t('brinkids') }}</h3>
+                    <!-- Fundo Águia - 2023 - Esquerda -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <article
+                                class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
+                                <div class="flex items-center mb-4 justify-end">
+                                    <h3 class="text-2xl font-bold text-white mr-3">{{ t('fundoAguia') }}</h3>
+                                    <span class="text-3xl">🦅</span>
+                                </div>
+                                <p class="text-white/90 mb-4 leading-relaxed">{{ t('fundoAguiaDesc') }}</p>
+                                <div class="flex flex-wrap gap-2 mb-4 justify-end">
+                                    <TechBadge v-for="(tech, index) in fundoAguiaTech" :key="index" :name="tech.name"
+                                        :icon="tech.icon" :bgClass="tech.bgClass" :textClass="tech.textClass" />
+                                </div>
+                                <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">💰 {{
+                                    t('financialSystem') }}</span></div>
+                            </article>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-white/30">
+                            2023
+                        </div>
+                        <div class="w-1/2"></div>
                     </div>
-                    <p class="text-white/90 mb-4 leading-relaxed">{{ t('brinkidsDesc') }}</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <TechBadge v-for="(tech, index) in brinkidsTech" :key="index" :name="tech.name"
-                            :icon="tech.icon" :bgClass="tech.bgClass" :textClass="tech.textClass" />
+
+                    <!-- Sistema de Automação Governamental - 2022 - Direita -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2"></div>
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-white/30">
+                            2022
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <article
+                                class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
+                                <div class="flex items-center mb-4">
+                                    <span class="text-3xl mr-3">🛠️</span>
+                                    <h3 class="text-2xl font-bold text-white">{{ t('sistemaAutomacao') }}</h3>
+                                </div>
+                                <p class="text-white/90 mb-4 leading-relaxed">{{ t('sistemaAutomacaoDesc') }}</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <TechBadge v-for="(tech, index) in sistemaAutomacaoTech" :key="index"
+                                        :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
+                                        :textClass="tech.textClass" />
+                                </div>
+                                <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">🏛️ {{
+                                    t('government') }}</span></div>
+                            </article>
+                        </div>
                     </div>
-                    <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">🧸 Recreio
-                            Infantil</span>
+
+                    <!-- Sistema de Palestras - 2019 - Esquerda -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <article
+                                class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
+                                <div class="flex items-center mb-4 justify-end">
+                                    <h3 class="text-2xl font-bold text-white mr-3">{{ t('sistemaPalestras') }}</h3>
+                                    <span class="text-3xl">🎤</span>
+                                </div>
+                                <p class="text-white/90 mb-4 leading-relaxed">{{ t('sistemaPalestrasDesc') }}</p>
+                                <div class="flex flex-wrap gap-2 mb-4 justify-end">
+                                    <TechBadge v-for="(tech, index) in sistemaPalestrasTech" :key="index"
+                                        :name="tech.name" :icon="tech.icon" :bgClass="tech.bgClass"
+                                        :textClass="tech.textClass" />
+                                </div>
+                                <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">📚 {{
+                                    t('projectEducation') }}</span></div>
+                            </article>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-white/30">
+                            2019
+                        </div>
+                        <div class="w-1/2"></div>
                     </div>
-                </article>
+
+                    <!-- Brinkids - 2018 - Direita -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2"></div>
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-white/30">
+                            2018
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <article
+                                class="bg-white/70 backdrop-blur-sm rounded-lg p-8 card card-shadow hover:shadow-xl transition-all hover:scale-105">
+                                <div class="flex items-center mb-4">
+                                    <span class="text-3xl mr-3">🧸</span>
+                                    <h3 class="text-2xl font-bold text-white">{{ t('brinkids') }}</h3>
+                                </div>
+                                <p class="text-white/90 mb-4 leading-relaxed">{{ t('brinkidsDesc') }}</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <TechBadge v-for="(tech, index) in brinkidsTech" :key="index" :name="tech.name"
+                                        :icon="tech.icon" :bgClass="tech.bgClass" :textClass="tech.textClass" />
+                                </div>
+                                <div class="border-t pt-4"><span class="text-sm text-accent-300 font-semibold">🧸
+                                        {{ t('recreioInfantil') }}</span></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -138,5 +240,21 @@ const brinkidsTech = [
     { name: 'Express.js', icon: '', bgClass: 'bg-gray-100', textClass: 'text-gray-800' },
     { name: 'React.js', icon: 'devicon-react-original colored', bgClass: 'bg-cyan-100', textClass: 'text-cyan-800' },
     { name: 'MongoDB', icon: 'devicon-mongodb-plain colored', bgClass: 'bg-green-100', textClass: 'text-green-800' },
+]
+
+const sistemaPalestrasTech = [
+    { name: 'Node.js', icon: 'devicon-nodejs-plain colored', bgClass: 'bg-yellow-100', textClass: 'text-yellow-800' },
+    { name: 'Express.js', icon: '', bgClass: 'bg-gray-100', textClass: 'text-gray-800' },
+    { name: 'React.js', icon: 'devicon-react-original colored', bgClass: 'bg-cyan-100', textClass: 'text-cyan-800' },
+    { name: 'MongoDB', icon: 'devicon-mongodb-plain colored', bgClass: 'bg-green-100', textClass: 'text-green-800' }
+]
+
+const sistemaAutomacaoTech = [
+    { name: 'Python', icon: 'devicon-python-plain colored', bgClass: 'bg-yellow-100', textClass: 'text-yellow-800' },
+    { name: 'Node.js', icon: 'devicon-nodejs-plain colored', bgClass: 'bg-yellow-100', textClass: 'text-yellow-800' },
+    { name: 'Laravel', icon: 'devicon-laravel-plain colored', bgClass: 'bg-red-100', textClass: 'text-red-800' },
+    { name: 'AdminLTE', icon: '', bgClass: 'bg-orange-100', textClass: 'text-orange-800' },
+    { name: 'PostgreSQL', icon: 'devicon-postgresql-plain colored', bgClass: 'bg-blue-100', textClass: 'text-blue-800' },
+    { name: 'Docker', icon: 'devicon-docker-plain colored', bgClass: 'bg-blue-100', textClass: 'text-blue-800' }
 ]
 </script>

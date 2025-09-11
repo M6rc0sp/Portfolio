@@ -20,7 +20,7 @@
                         class="text-white/90 hover:text-white/100 font-medium transition-colors">{{ t('projects')
                         }}</router-link>
                     <a target="_blank" rel="noopener noreferrer" :href="resumeUrl"
-                        class="ml-4 inline-block bg-accent-500 hover:bg-accent-600 text-white px-3 py-2 rounded-md text-sm shadow-md hover:shadow-lg transition-colors">{{
+                        class="ml-4 inline-block bg-accent-500 hover:bg-accent-600 text-white px-3 py-2 rounded-md text-sm shadow-md hover:shadow-lg transition-colors hover:text-white">{{
                             t('resume')
                         }}</a>
                 </div>
