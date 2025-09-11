@@ -80,7 +80,8 @@ const translations = {
         sendEmail: 'Enviar email',
 
         // Footer
-        allRightsReserved: 'Todos os direitos reservados'
+        allRightsReserved: 'Todos os direitos reservados',
+        backToTop: 'Voltar ao topo'
     },
     en: {
         // Header
@@ -165,7 +166,8 @@ const translations = {
         languages: 'Languages',
 
         // Footer
-        allRightsReserved: 'All rights reserved'
+        allRightsReserved: 'All rights reserved',
+        backToTop: 'Back to top'
     }
 }
 

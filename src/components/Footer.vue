@@ -1,12 +1,12 @@
 <template>
     <footer class="border-t border-white/10 mt-16 py-8 bg-transparent">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                <div class="text-sm text-white/60">
+            <div class="flex flex-col items-center space-y-6 md:flex-row md:justify-between md:space-y-0">
+                <div class="text-sm text-white/60 text-center md:text-left">
                     &copy; {{ year }} Marcos Paulo Barbosa
                 </div>
 
-                <div class="flex items-center space-x-6">
+                <div class="flex items-center justify-center space-x-6">
                     <a href="https://github.com/m6rc0sp" target="_blank"
                         class="text-white/60 hover:text-white transition-colors">
                         <i class="devicon-github-plain text-lg"></i>
@@ -24,10 +24,11 @@
                     </a>
                 </div>
 
-                <button @click="scrollToTop" class="text-white/60 hover:text-white transition-colors md:ml-auto">
-                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <button @click="scrollToTop" class="text-white/60 hover:text-white transition-colors text-center md:text-right">
+                    <svg class="w-4 h-4 mx-auto md:mx-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M7 14l5-5 5 5z" />
                     </svg>
+                    <span class="text-xs block md:hidden mt-1">{{ t('backToTop') }}</span>
                 </button>
             </div>
         </div>
