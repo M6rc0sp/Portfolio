@@ -66,4 +66,3 @@ src/
 - ✅ Optimized performance
 - ✅ Internationalization (Portuguese/English)
 - ✅ Contact modal with email integration
-- Replace social media links with real ones
