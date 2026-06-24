@@ -56,13 +56,3 @@ src/
     ├── Projects.vue          # Projects showcase
     └── Resume.vue            # Resume/CV page
 ```
-
-## Features:
-
-- ✅ Minimalist and responsive design
-- ✅ Clear and simple navigation
-- ✅ Clean and well-structured code
-- ✅ Zero unnecessary dependencies
-- ✅ Optimized performance
-- ✅ Internationalization (Portuguese/English)
-- ✅ Contact modal with email integration
